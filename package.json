@@ -7,7 +7,8 @@
     "confirm": "DEBUG=automatic-test-deploy:* npm start",
     "webdriver-start": "webdriver-manager start --detach",
     "test:local": "./node_modules/mocha/bin/mocha",
-    "test:ui:local": "cd ./ui-test;protractor config.js;cd ../"
+    "test:ui:local": "cd ./ui-test;protractor config.js;cd ../",
+    "jenkin-serve": "ssh -i varit.pem ec2-user@ec2-18-224-7-113.us-east-2.compute.amazonaws.com"
   },
   "dependencies": {
     "cookie-parser": "~1.4.4",
