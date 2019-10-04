@@ -1,5 +1,5 @@
 pipeline {
-    agent { docker { image 'node:7-alpine' } }
+    agent { none }
     stages {
         stage("Fix the permission issue") {
             agent any
@@ -8,6 +8,7 @@ pipeline {
             }
         }
         stage('build') {
+            agent {docker { image 'node:7-alpine' }
             steps {
                 sh 'npm --version'
             }
