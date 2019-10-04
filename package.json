@@ -8,7 +8,7 @@
     "webdriver-start": "webdriver-manager start --detach",
     "test:local": "./node_modules/mocha/bin/mocha",
     "test:ui:local": "cd ./ui-test;protractor config.js;cd ../",
-    "jenkins-serve": "ssh -i varit.pem ec2-user@ec2-18-224-7-113.us-east-2.compute.amazonaws.com",
+    "jenkins-serve": "ssh -i varit.pem ec2-user@18.224.7.113",
     "deploy": "eb deploy node-express-env"
   },
   "dependencies": {
