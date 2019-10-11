@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'sudo npm --version'
+                sh 'npm --version'
             }
         }
     }
