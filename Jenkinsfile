@@ -11,6 +11,11 @@ pipeline {
                 sh 'npm run test:local'
             }
         }
+        stage('test ui') {
+            steps {
+                sh 'npm run test:test:local'
+            }
+        }
     }
     
 }
