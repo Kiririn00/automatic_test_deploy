@@ -6,7 +6,7 @@ pipeline {
                 sh 'npm install'
             }
         }
-        stage('test') {
+        stage('test api') {
             steps {
                 sh 'npm run test:local'
             }
