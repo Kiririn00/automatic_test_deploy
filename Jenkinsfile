@@ -16,6 +16,11 @@ pipeline {
                 sh 'npm run test:ui:local'
             }
         }
+        stage('deploy') {
+            steps {
+                sh 'npm run deploy'
+            }
+        }
     }
     
 }
