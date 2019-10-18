@@ -18,7 +18,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'npm run start'
+                sh 'forever start ./bin/www'
             }
         }
     }
