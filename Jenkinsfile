@@ -18,7 +18,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh '/home/ec2-user/.local/bin/eb deploy node-express-env'
+                sh 'sudo /home/ec2-user/.local/bin/eb deploy node-express-env'
             }
         }
     }
