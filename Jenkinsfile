@@ -13,7 +13,7 @@ pipeline {
         }
         stage('test ui') {
             steps {
-                sh 'npm run test:test:local'
+                sh 'npm run test:ui:local'
             }
         }
     }
