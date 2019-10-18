@@ -18,7 +18,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'npm run deploy'
+                sh '~/.local/bin/eb deploy node-express-env'
             }
         }
     }
