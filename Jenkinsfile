@@ -18,7 +18,7 @@ pipeline {
         }
         stage('deploy') {
             steps {
-                sh 'forever start ./bin/www'
+                sh 'sudo forever start ./bin/www'
             }
         }
     }
