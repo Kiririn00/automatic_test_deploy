@@ -8,7 +8,7 @@ pipeline {
         }
         stage('test api') {
             steps {
-                sh 'npm run test:local'
+                sh 'npm run webdriver-start & npm run test:local'
             }
         }
         stage('test ui') {
