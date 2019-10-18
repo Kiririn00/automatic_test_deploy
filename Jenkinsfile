@@ -1,6 +1,11 @@
 pipeline {
     agent any 
     stages {
+        stage('clean all') {
+            steps {
+                sh 'sudo forever stopall'
+            }
+        }
         stage('build') {
             steps {
                 sh 'npm install'
